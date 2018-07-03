@@ -11,7 +11,7 @@ function whoopsmessage() {
 
 function inputString(str) {
   if (userstring.length > 299) {
-    return whoopsmessage();
+    whoopsmessage();
   } else {
     return userstring;
   }
