@@ -1,8 +1,8 @@
-var yourmessage = "Just looking to expand my network.\nThanks!";
+var yourmessage = "Testing the script on your profile.\nThanks!";
 
 var personName = /^\S+/.exec(document.getElementsByClassName("pv-top-card-section__name Sans-26px-black-85%")[0].innerText);
 
-var intro = "Hi "+personName+",\n"
+var intro = "Hi "+personName+",\n";
 var userstring = intro+"Just looking to expand my network.\nThanks, André.";
 
 function whoopsmessage() {
