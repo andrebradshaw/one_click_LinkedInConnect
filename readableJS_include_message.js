@@ -3,7 +3,7 @@ var yourmessage = "Testing the script on your profile.\nThanks!";
 var personName = /^\S+/.exec(document.getElementsByClassName("pv-top-card-section__name Sans-26px-black-85%")[0].innerText);
 
 var intro = "Hi "+personName+",\n";
-var userstring = intro+"Just looking to expand my network.\nThanks, André.";
+var userstring = intro+yourmessage;
 
 function whoopsmessage() {
   alert("whoops.. your message is too long. go back into your code and fix it.");
