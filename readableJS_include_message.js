@@ -52,10 +52,14 @@ if (firstAction != "Connect") {
   var openDialog = new Promise(resolve => {
     resolve(document.getElementsByClassName("pv-s-profile-actions__overflow-toggle pv-top-card-section__inline-overflow-button button-secondary-large-muted mt2")[0].click());
   });
-  openDialog.then(clickConnect()).then(clickAddMsg()).then(insertStringToField()).then(confirm())
+if(userstring.length < 301){
+  	openDialog.then(clickConnect()).then(clickAddMsg()).then(insertStringToField()).then(confirm());
+  }
 } else {
   var openCon = new Promise(resolve => {
     resolve(document.getElementsByClassName("pv-s-profile-actions__label")[0].click());
   });
-  openCon.then(clickAddMsg()).then(insertStringToField()).then(confirm());
+  if(userstring.length < 301){
+  	openCon.then(clickAddMsg()).then(insertStringToField()).then(confirm());
+  }
 }
