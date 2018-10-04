@@ -1,11 +1,11 @@
 var indxArr = [];
+
+var res = document.getElementsByClassName("search-result__actions");
 for (i = 0; i < res.length; i++) {
   if (/Connect/.test(res[i].innerText) === true) {
     indxArr.push(i);
   }
 }
-var res = document.getElementsByClassName("search-result__actions");
-
 function connecR(itm) {
   setTimeout(() => {
     var btn = res[itm].innerText;
